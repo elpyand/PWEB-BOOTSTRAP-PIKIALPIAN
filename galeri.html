@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AESPA - Profil & Galeri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #101015;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    .navbar {
+      margin-top: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background-color: #101015 !important;
+    }
+
+    .navbar-nav {
+      gap: 60px;
+    }
+
+    .nav-link, .navbar-brand {
+      color: #ffffff !important;
+    }
+
+    .nav-link:hover {
+      color: #ccccff !important;
+    }
+
+    .container {
+    }
+
+    .card {
+      background-color: #ffffff15;
+      color: #ffffff;
+      border: none;
+    }
+
+    .member-img {
+      border-radius: 1rem;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .member-img {
+      transform: scale(1.05);
+    }
+
+    .gallery-img {
+      border-radius: 1rem;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: 0.3s ease;
+    }
+
+    .gallery-img:hover {
+      opacity: 0.8;
+      transform: scale(1.03);
+    }
+
+    .social-icon {
+      text-decoration: none;
+      margin-right: 8px;
+    }
+
+    h2, h5 {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">æZone</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Profil Member -->
+<div class="container py-5">
+  <h2 class="mb-4 text-center">Profil Member AESPA</h2>
+  <div class="row">
+    <!-- Karina -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="karina.jpg" class="member-img" alt="Karina">
+        <div class="card-body">
+          <h5 class="card-title">Karina</h5>
+          <p class="card-text">Leader dan main dancer. Dikenal dengan visual futuristik dan karisma panggung luar biasa.</p>
+          <a href="#" class="social-icon text-primary">Instagram</a>
+          <a href="#" class="social-icon text-danger">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <!-- Winter -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="winter.jpg" class="member-img" alt="Winter">
+        <div class="card-body">
+          <h5 class="card-title">Winter</h5>
+          <p class="card-text">Vokal utama dan lead dancer. Memiliki suara khas dan banyak penggemar internasional.</p>
+          <a href="#" class="social-icon text-primary">Instagram</a>
+          <a href="#" class="social-icon text-danger">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <!-- Giselle -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="giselle.jpg" class="member-img" alt="Giselle">
+        <div class="card-body">
+          <h5 class="card-title">Giselle</h5>
+          <p class="card-text">Main rapper. Bilingual dan membawa gaya urban-modern dalam aespa.</p>
+          <a href="#" class="social-icon text-primary">Instagram</a>
+          <a href="#" class="social-icon text-danger">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <!-- Ningning -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="ningning.jpg" class="member-img" alt="Ningning">
+        <div class="card-body">
+          <h5 class="card-title">Ningning</h5>
+          <p class="card-text">Maknae dan vokalis utama. Suaranya powerful dan penuh ekspresi.</p>
+          <a href="#" class="social-icon text-primary">Instagram</a>
+          <a href="#" class="social-icon text-danger">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Galeri Foto dengan Lightbox -->
+  <h2 class="mt-5 mb-4 text-center">Galeri AESPA</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <a href="armageddon1.jpg" class="glightbox">
+        <img src="armageddon1.jpg" alt="aespa photo 1" class="gallery-img">
+      </a>
+    </div>
+    <div class="col-md-4 mb-3">
+      <a href="armageddon2.jpg" class="glightbox">
+        <img src="armageddon2.jpg" alt="aespa photo 2" class="gallery-img">
+      </a>
+    </div>
+    <div class="col-md-4 mb-3">
+      <a href="armageddon3.jpg" class="glightbox">
+        <img src="armageddon3.jpg" alt="aespa photo 3" class="gallery-img">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- JS Bootstrap + Lightbox -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({ selector: '.glightbox' });
+
+  // Tambah efek scroll ke navbar
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
